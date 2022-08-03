@@ -1,0 +1,91 @@
+/** 
+* first letter d,t,m stands for desktop, tablet, mobile 
+* second letter t,b,l,r for top,bottom,left,right 
+* third m,p for margin or padding 
+* 
+* you might want to set --size somewhere in your theme.
+* otherwise 1rem is uses as a fallback
+*/
+
+   *[style*='--d_t_m'] {
+      margin-block-start: calc( var(--d_t_m)  * var(--size, 1rem) ) !important;   
+   }
+   *[style*='--d_t_p'] {
+      padding-block-start: calc( var(--d_t_p)  * var(--size, 1rem) ) !important;   
+   }
+   *[style*='--d_b_m'] {
+      margin-block-end: calc( var(--d_b_m)  * var(--size, 1rem) ) !important;   
+   }
+   *[style*='--d_b_p'] {
+      padding-block-end: calc( var(--d_b_p)  * var(--size, 1rem) ) !important;   
+   }
+   *[style*='--d_l_m'] {
+      margin-inline-start: calc( var(--d_l_m)  * var(--size, 1rem) ) !important;   
+   }
+   *[style*='--d_l_p'] {
+      padding-inline-start: calc( var(--d_l_p)  * var(--size, 1rem) ) !important;   
+   }
+    *[style*='--d_r_m'] {
+      margin-inline-end: calc( var(--d_r_m)  * var(--size, 1rem) ) !important;   
+   }
+   *[style*='--d_r_p'] {
+      padding-inline-end: calc( var(--d_r_p)  * var(--size, 1rem) ) !important;   
+   }
+
+/* max-width 1024 */
+@media screen and (min-width: 1024px) {
+      *[style*='--t_t_m'] {
+      margin-block-start: calc( var(--t_t_m)  * var(--size, 1rem) ) !important;   
+      }
+      *[style*='--t_t_p'] {
+         padding-block-start: calc( var(--t_t_p)  * var(--size, 1rem) ) !important;   
+      }
+      *[style*='--t_b_m'] {
+         margin-block-end: calc( var(--t_b_m)  * var(--size, 1rem) ) !important;   
+      }
+      *[style*='--t_b_p'] {
+         padding-block-end: calc( var(--t_b_p)  * var(--size, 1rem) ) !important;   
+      }
+      *[style*='--t_l_m'] {
+         margin-inline-start: calc( var(--t_l_m)  * var(--size, 1rem) ) !important;   
+      }
+      *[style*='--t_l_p'] {
+         padding-inline-start: calc( var(--t_l_p)  * var(--size, 1rem) ) !important;   
+      }
+      *[style*='--t_r_m'] {
+         margin-inline-end: calc( var(--t_r_m)  * var(--size, 1rem) ) !important;   
+      }
+      *[style*='--t_r_p'] {
+         padding-inline-end: calc( var(--t_r_p)  * var(--size, 1rem) ) !important;   
+      }
+}
+
+@media screen and (max-width: 1024px) {
+      *[style*='--m_t_m'] {
+      margin-block-start: calc( var(--m_t_m)  * var(--size, 1rem) ) !important;   
+      }
+      *[style*='--m_t_p'] {
+         padding-block-start: calc( var(--m_t_p)  * var(--size, 1rem) ) !important;   
+      }
+      *[style*='--m_b_m'] {
+         margin-block-end: calc( var(--m_b_m)  * var(--size, 1rem) ) !important;   
+      }
+      *[style*='--m_b_p'] {
+         padding-block-end: calc( var(--m_b_p)  * var(--size, 1rem) ) !important;   
+      }
+      *[style*='--m_l_m'] {
+         margin-inline-start: calc( var(--m_l_m)  * var(--size, 1rem) ) !important;   
+      }
+      *[style*='--m_l_p'] {
+         padding-inline-start: calc( var(--m_l_p)  * var(--size, 1rem) ) !important;   
+      }
+      *[style*='--m_r_m'] {
+         margin-inline-end: calc( var(--m_r_m)  * var(--size, 1rem) ) !important;   
+      }
+      *[style*='--m_r_p'] {
+         padding-inline-end: calc( var(--m_r_p)  * var(--size, 1rem) ) !important;   
+      }
+   }
+  
+
+
