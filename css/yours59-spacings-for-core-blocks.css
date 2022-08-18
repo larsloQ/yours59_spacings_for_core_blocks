@@ -60,7 +60,7 @@
       }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
       *[style*='--m_t_m'] {
       margin-block-start: calc( var(--m_t_m)  * var(--size, 1rem) ) !important;   
       }
